@@ -241,7 +241,6 @@ NSString* const kAPPBackgroundEventDeactivate = @"deactivate";
  */
 + (NSString*) wkProperty
 {
-<<<<<<< HEAD
     NSString* str;
     if (@available(iOS 12.2, *)) {
       str = @"YWx3YXlzUnVuc0F0Rm9yZWdyb3VuZFByaW9yaXR5";
@@ -249,10 +248,6 @@ NSString* const kAPPBackgroundEventDeactivate = @"deactivate";
       str = @"X2Fsd2F5c1J1bnNBdEZvcmVncm91bmRQcmlvcml0eQ==";
     }
     NSData* data = [[NSData alloc] initWithBase64EncodedString:str options:0];
-=======
-    NSString* str = @"YWx3YXlzUnVuc0F0Rm9yZWdyb3VuZFByaW9yaXR5";
-    NSData* data  = [[NSData alloc] initWithBase64EncodedString:str options:0];
->>>>>>> 0a6bf35cb9f2bfcb8a0a79767b57158e17a32f13
 
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
